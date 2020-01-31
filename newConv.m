@@ -1,13 +1,18 @@
 clear all;
 clc;
 
+% All rights resrved
 % ---- Signal and Systems ----
 % ---- Pooya Jamshidi ----
+% ---- This code is written for project of Signal and System lecture in Ilam university. ----
 
+% intialazing The period.
 period = linspace(0, 4 * pi);
+
 x = sin(period);
 h = cos(period);
 hi = cos(-period);
+
 result = zeros(1, length(x) + length(h) - 1);
 
 hx = animatedline;
